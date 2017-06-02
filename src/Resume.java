@@ -1,11 +1,20 @@
 import java.sql.Date;
 
+
 public class Resume {
 	
-	public String Education;
-	public String WorkExperience;
-	public String Skills;
-	
-	Date date;
+	ContactAddress addAddress;
+	Education addEducation;
+	WorkExperience addWorkExperience;
+	Skills addSkills;
+		
+	public Resume(){
+		
+		this.addAddress = new ContactAddress();
+		this.addEducation = new Education();
+		this.addWorkExperience = new WorkExperience();
+		this.addSkills = new Skills();
+		
+	}
 
 }

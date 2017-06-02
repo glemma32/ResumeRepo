@@ -1,33 +1,56 @@
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Education {
+
 	
-	List<String> education = new ArrayList<String>();
-	
-
-	public String Education(){
+	List<String> education;
+	public Education(){
+	education= new ArrayList<String>();
+	}
+	 public List<String> getEducation() {
+		 
+		 Scanner sc = new Scanner(System.in);
+		 String inEducation = sc.nextLine();;
+		 		 
+		//do
+		 while(!inEducation.equalsIgnoreCase("STOP"))
+	 {
+			 //String inEducation =sc.nextLine();
+			//education.add(inEducation);
+			//return inEducation;
+			
+			ArrayList arrayListOne;
+		    arrayListOne = new ArrayList();   
+		    inEducation = sc.nextLine();
+		     education.add(inEducation);
+		     
+	 }
+		     
+		     return this.education;
+		  
+		      //System.out.println("Number of string in array: " + letterArray.size());
+		      // Display eveything in the list
 		
-		education.add(Input);
-		
-		System.out.println("#1 normal for loop");
-		for (int i = 0; i < education.size(); i++) {
-						return education.get(i);
-						
-						Scanner input = new Scanner(System.in); 
-
-						ArrayList arrayListOne;
-						arrayListOne = new ArrayList();
-						ArrayList<String> letterArray = new ArrayList<String>();
-						for(int i = 0; i < letterArray.size(); i++)  {
-						    System.out.println(letterArray.get(i));
-						}
-
-						System.out.println("Type a string:");
-						letterArray.add(input.nextLine());
-						System.out.println("Number of string in array: " + letterArray.size());
-		}
-		
+		 //return education.add(inEducation);
+	 }
+		   
+	public void setEducation(List<String> education) {
+		this.education = education;
 	}
 
-}
+	public void displayEducation(ArrayList education) {
+		    for(int i = 0; i < education.size(); i++) 
+		      System.out.println(education.get(i));
+		  }
+
+		 
+			
+			
+			 //System.out.println(l);
+	 }
+	
+						
+					

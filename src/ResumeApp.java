@@ -1,4 +1,5 @@
 import java.sql.Date;
+import java.util.ArrayList;
 
 public class ResumeApp {
 
@@ -8,48 +9,28 @@ public class ResumeApp {
 int number;
 Date date;
 String rating[]={"skilled", "proficient", "familiar"};
+
+Resume myNewResume = new Resume();
+print("First Name");
+print("Last Name");
+myNewResume.addAddress.getFirstName();
+myNewResume.addAddress.getLastName();
+print("Email Address");
+myNewResume.addAddress.getEmailAddress();
+print("Add your Educational Background");
+myNewResume.addEducation.getEducation();
+print("Add your Work Experience");
+myNewResume.addWorkExperience.getNewExperience();
+print("Add your Skills");
+myNewResume.addSkills.getSkills();
+
+
 		
-/*String[] elements = { "a", "a", "a", "a" };
-
-for( int i = 0; i < elements.length - 1; i++)
-{
-    String element = elements[i];
-    String nextElement = elements[i+1];
-}*/
-		for(number=1;number<=100;number++){
-			//education
-		}
-			if((number%3==0)&&!(number%5==0))
-			System.out.println("Fizz");
-			else if(number%5==0&&!(number%3==0))
-				System.out.println("Buzz");
-			else if((number%3==0)&&(number%5==0))
-				System.out.println("FizzBuzz");
-			else
-				System.out.println(number);
-
-	for(number=1;number<=100;number++){
-		//workexperience
 	}
-		if((number%3==0)&&!(number%5==0))
-		System.out.println("Fizz");
-		else if(number%5==0&&!(number%3==0))
-			System.out.println("Buzz");
-		else if((number%3==0)&&(number%5==0))
-			System.out.println("FizzBuzz");
-		else
-			System.out.println(number);
-
-for(number=1;number<=100;number++){
-	//Skills
-}
-	if((number%3==0)&&!(number%5==0))
-	System.out.println("Fizz");
-	else if(number%5==0&&!(number%3==0))
-		System.out.println("Buzz");
-	else if((number%3==0)&&(number%5==0))
-		System.out.println("FizzBuzz");
-	else
-		System.out.println(number);
 	
+	private static void print(String s){
+		
+		
+		System.out.println(s);
+	}
 }
