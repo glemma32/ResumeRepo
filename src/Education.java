@@ -15,8 +15,9 @@ public class Education {
 		 Scanner sc = new Scanner(System.in);
 		 String inEducation = sc.nextLine();;
 		 		 
-		//do
-		 while(!inEducation.equalsIgnoreCase("STOP"))
+		do
+		 //while(!inEducation.equalsIgnoreCase("STOP"))
+		
 	 {
 			 //String inEducation =sc.nextLine();
 			//education.add(inEducation);
@@ -28,23 +29,26 @@ public class Education {
 		     education.add(inEducation);
 		     
 	 }
-		     
-		     return this.education;
-		  
+		      
 		      //System.out.println("Number of string in array: " + letterArray.size());
 		      // Display eveything in the list
 		
 		 //return education.add(inEducation);
+	while(!inEducation.equalsIgnoreCase("STOP"));
+	 //while(sc.nextLine() != "STOP");
+		return this.education;
 	 }
-		   
 	public void setEducation(List<String> education) {
 		this.education = education;
 	}
-
-	public void displayEducation(ArrayList education) {
-		    for(int i = 0; i < education.size(); i++) 
-		      System.out.println(education.get(i));
-		  }
+	public ArrayList<String> displayEducation(List<String> education) {
+	    for(int i = 0; i < education.size(); i++) 
+	    		    
+	    education.get(i);
+	    return this.displayEducation(education);
+	    
+	}
+	
 
 		 
 			

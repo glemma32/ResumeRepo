@@ -4,27 +4,39 @@ import java.util.Scanner;
 
 public class WorkExperience {
 				
-		List<String> NewExperience = new ArrayList<String>();
+		List<String> experience;
+		
+	public WorkExperience(){
+		
+		experience = new ArrayList<String>();
 
+	}
 		public List<String> getNewExperience() {
 			
 			// ArrayList arrayListOne;
 			 //arrayListOne = new ArrayList();
 			 Scanner inExperience = new Scanner(System.in);
+			 String input = inExperience.nextLine();
 				
-			while(true) {
-				String input = inExperience.nextLine();
-				NewExperience.add(input);
+			do {
+				 input = inExperience.nextLine();
+				experience.add(input);
 			}
+			
+			while(!input.equalsIgnoreCase("STOP"));
+			 //while(sc.nextLine() != "STOP");
+				return this.experience;
+			
 			}
 
 		public void setNewExperience(List<String> newExperience) {
-			NewExperience = newExperience;
+			this.experience = experience;
 		}
 		
-		public void displayEducation(ArrayList education) {
-		    for(int i = 0; i < education.size(); i++) 
-		      System.out.println(education.get(i));
+		public void displayExperience(List<String> experience) {
+		    for(int i = 0; i < experience.size(); i++) 
+		      System.out.println(experience.get(i));
+		    
 		  }
 		
 		

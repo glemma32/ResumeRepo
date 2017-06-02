@@ -36,5 +36,13 @@ public class ContactAddress {
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
+	
+	public String displayFullName(){
+		return firstName + " " + lastName;
+	}
+	public String displayaddress(){
+		return emailAddress;
+		
+	}
 
 }

@@ -1,4 +1,6 @@
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Resume {
@@ -7,6 +9,7 @@ public class Resume {
 	Education addEducation;
 	WorkExperience addWorkExperience;
 	Skills addSkills;
+	//List<String> education = new ArrayList<String>();
 		
 	public Resume(){
 		
@@ -16,5 +19,12 @@ public class Resume {
 		this.addSkills = new Skills();
 		
 	}
+	/*public List<String> displayEducation(List<String> education) {
+	    for(int i = 0; i < education.size(); i++) 
+	    		    
+	    education.get(i);
+	    return this.displayEducation(education);
+	    
+	}*/
 
 }
