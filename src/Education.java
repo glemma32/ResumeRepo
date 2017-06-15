@@ -3,58 +3,55 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class Education {
 
 	
-	List<String> education;
-	public Education(){
-	education= new ArrayList<String>();
+	
+	String degree,
+	university, gradDate, choice="";
+	
+
+	
+	public String getDegree() {
+		Scanner input = new Scanner(System.in);
+		degree = input.next();
+		return degree;
 	}
-	 public List<String> getEducation() {
-		 
-		 Scanner sc = new Scanner(System.in);
-		 String inEducation = sc.nextLine();;
-		 		 
-		do
-		 //while(!inEducation.equalsIgnoreCase("STOP"))
-		
-	 {
-			 //String inEducation =sc.nextLine();
-			//education.add(inEducation);
-			//return inEducation;
-			
-			ArrayList arrayListOne;
-		    arrayListOne = new ArrayList();   
-		    inEducation = sc.nextLine();
-		     education.add(inEducation);
-		     
-	 }
-		      
-		      //System.out.println("Number of string in array: " + letterArray.size());
-		      // Display eveything in the list
-		
-		 //return education.add(inEducation);
-	while(!inEducation.equalsIgnoreCase("STOP"));
-	 //while(sc.nextLine() != "STOP");
-		return this.education;
-	 }
-	public void setEducation(List<String> education) {
-		this.education = education;
+
+
+	public void setDegree(String degree) {
+		this.degree = degree;
 	}
-	public ArrayList<String> displayEducation(List<String> education) {
-	    for(int i = 0; i < education.size(); i++) 
-	    		    
-	    education.get(i);
-	    return this.displayEducation(education);
+
+
+	public String getUniversity() {
+		Scanner input = new Scanner(System.in);
+		university = input.next();
+		return university;
+		}
+
+
+	public void setUniversity(String university) {
+		this.university = university;
+	}
+
+
+	public String getGradDate() {
+		Scanner input = new Scanner(System.in);
+		gradDate =  input.next();
+		return gradDate;
+	}
+
+
+	public void setGradDate(String gradDate) {
+		this.gradDate = gradDate;
+	}
+	
+	 
 	    
 	}
 	
-
-		 
-			
-			
-			 //System.out.println(l);
-	 }
-	
+	 
 						
-					
+	 				

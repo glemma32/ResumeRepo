@@ -37,12 +37,12 @@ public class ContactAddress {
 		this.emailAddress = emailAddress;
 	}
 	
-	public String displayFullName(){
+	/*public String displayFullName(){
 		return firstName + " " + lastName;
 	}
 	public String displayaddress(){
 		return emailAddress;
 		
-	}
+	}*/
 
 }
